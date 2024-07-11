@@ -1,5 +1,5 @@
-#!/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_0b9u2d318b/croot/openssl_1718384848925/_build_env/bin/perl
-# Copyright 2002-2021 The OpenSSL Project Authors. All Rights Reserved.
+#!/usr/bin/env perl
+# Copyright 2002-2018 The OpenSSL Project Authors. All Rights Reserved.
 # Copyright (c) 2002 The OpenTSA Project. All rights reserved.
 #
 # Licensed under the Apache License 2.0 (the "License").  You may not use
@@ -47,7 +47,7 @@ sub create_curl {
     $curl->setopt(CURLOPT_VERBOSE, 1) if $options{d};
     $curl->setopt(CURLOPT_FAILONERROR, 1);
     $curl->setopt(CURLOPT_USERAGENT,
-        "OpenTSA tsget.pl/openssl-3.0.14");
+        "OpenTSA tsget.pl/openssl-3.3.1");
 
     # Options for POST method.
     $curl->setopt(CURLOPT_UPLOAD, 1);
