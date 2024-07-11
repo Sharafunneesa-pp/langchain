@@ -1,0 +1,13 @@
+prefix=/Users/sharafunneesapp/Desktop/Application/venv
+exec_prefix=/Users/sharafunneesapp/Desktop/Application/venv
+libdir=/Users/sharafunneesapp/Desktop/Application/venv/lib
+sharedlibdir=/Users/sharafunneesapp/Desktop/Application/venv/lib
+includedir=/Users/sharafunneesapp/Desktop/Application/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
